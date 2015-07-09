@@ -14,7 +14,7 @@ public class BookController {
 	@Inject
 	BookEJB ejbBook;
 	
-	private Book book = new Book();
+	Book book = new Book();
 
 	public String doCreateBook() {
 		

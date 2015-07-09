@@ -11,10 +11,6 @@ import javax.persistence.TypedQuery;
 
 @Named
 @Stateless
-@DataSourceDefinition (name = "java:global/jdbc/jsfDS",
-className = "org.apache.derby.jdbc.EmbeddedDriver",
-url = "jdbc:derby:memory:jsfDB;create=true;user=app;password=app"
-)
 public class BookEJB {
 	
 	@Inject
