@@ -6,3 +6,4 @@ It must have VALID getters and setters. Otherwise, when you try to use EL to acc
 such as #{bookController.book.title}, it complains saying 
 
 Caused by: javax.el.PropertyNotFoundException: The class 'github.vikram.javaee.jsf.BookController' does not have the property 'book'.
+5. Make sure javac is version 7!
