@@ -1,5 +1,5 @@
 1. We need faces-config.xml file to be present in webapp/WEB-INF. Otherwise the application will not load the html page
-2. BookEJB must strictly only have EJB methods and not define any DataSources!
+2. You dont need derby network server to be running. This application uses an in memory db. The db settings are configured using datasource that is defined in DatabasePopulator
 3. DataSources are defined in DatabasePopulator
 4. If a Java class is marked as @Named, it becomes a Backing bean. Important thing to notice about this is it must satisfy all the qualities of a bean.
 It must have VALID getters and setters. Otherwise, when you try to use EL to access bean properties
