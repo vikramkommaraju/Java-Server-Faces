@@ -20,7 +20,7 @@ public class BookEJB {
 		return em.find(Book.class, id);
 	}
 
-	public List<Book> findBooks() {
+	public List<Book> findAllBooks() {
 		TypedQuery<Book> query = em.createNamedQuery(Book.FIND_ALL, Book.class);
 		return query.getResultList();
 	}

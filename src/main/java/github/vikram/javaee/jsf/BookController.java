@@ -32,4 +32,12 @@ public class BookController {
 		book = ejbBook.findBookById(book.getId());
 	}
 	
+	public Book getBook() {
+	    return book;
+	  }
+
+	  public void setBook(Book book) {
+	    this.book = book;
+	  }
+	
 }
